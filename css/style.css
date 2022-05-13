@@ -2,6 +2,7 @@ body{
   background-color: #000000;
   color: aliceblue;
   font-family: sans-serif;
+  margin: 0;
 }
 
 a{
@@ -36,9 +37,9 @@ header h2{
 }
 
 
-#topimg img{
+#topimg video{
   width: 100%;
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 
@@ -223,6 +224,10 @@ footer a{
 }
 
 @media (min-width:600px) {
+  #topimg video{
+    padding-top: 83px;
+  }
+
   #chara1{
     display: flex;
     justify-content: center;
@@ -230,7 +235,7 @@ footer a{
   }
   
   #charaimg1 img{
-    width: 550px;
+    width: 500px;
     height: auto;  
     position: absolute;
     right: 50%;
@@ -262,7 +267,7 @@ footer a{
   }
   
   #charaimg2 img{
-    width: 550px;
+    width: 500px;
     height: auto;
     position: absolute;
     left: 50%;
