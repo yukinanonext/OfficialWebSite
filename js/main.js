@@ -8,6 +8,13 @@
     return false;
   });
 
+  $(function() {
+    const hum = $('#header-menu, .close');
+    const nav = $('.sp-header-link');
+    hum.on('click', function(){
+       nav.toggleClass('toggle');
+    });
+ });
 
   const abstracttarget = document.getElementById('abstract-text');
   const characterimgtarget1 = document.getElementById('charaimg1');
