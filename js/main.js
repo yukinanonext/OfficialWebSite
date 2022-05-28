@@ -46,4 +46,37 @@
   observer.observe(characterimgtarget2);
   observer.observe(charactertexttarget2);
 
+
+  const voice1_1 = new Audio('voice/hpボイス1-1.mp3');
+  const voicebutton1_1 = document.getElementById('chara1voice1');
+  voicebutton1_1.addEventListener('click', () => {
+    voice1_1.play();
+  });
+  const voice1_2 = new Audio('voice/hpボイス1-2.mp3');
+  const voicebutton1_2 = document.getElementById('chara1voice2');
+  voicebutton1_2.addEventListener('click', () => {
+    voice1_2.play();
+  });
+  const voice1_3 = new Audio('voice/hpボイス1-3.mp3');
+  const voicebutton1_3 = document.getElementById('chara1voice3');
+  voicebutton1_3.addEventListener('click', () => {
+    voice1_3.play();
+  });
+
+  const voice2_1 = new Audio('voice/hpボイス2-1.mp3');
+  const voicebutton2_1 = document.getElementById('chara2voice1');
+  voicebutton2_1.addEventListener('click', () => {
+    voice2_1.play();
+  });
+  const voice2_2 = new Audio('voice/hpボイス2-2.mp3');
+  const voicebutton2_2 = document.getElementById('chara2voice2');
+  voicebutton2_2.addEventListener('click', () => {
+    voice2_2.play();
+  });
+  const voice2_3 = new Audio('voice/hpボイス2-3.mp3');
+  const voicebutton2_3 = document.getElementById('chara2voice3');
+  voicebutton2_3.addEventListener('click', () => {
+    voice2_3.play();
+  });
+
 }
