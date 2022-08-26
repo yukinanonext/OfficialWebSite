@@ -1,16 +1,15 @@
-body{
+body {
   background-color: #000000;
   color: aliceblue;
   font-family: sans-serif;
   margin: 0;
 }
 
-a{
+a {
   color: #000000;
 }
 
-
-header{
+header {
   display: flex;
   background-color: rgba(255, 255, 255, 0.8);
   color: black;
@@ -22,21 +21,21 @@ header{
   z-index: 9998;
 }
 
-header h2{
+header h2 {
   padding: 5px;
 }
 
-#header-link{
+#header-link {
   display: none;
 }
 
-#header-link a{
+#header-link a {
   font-size: large;
   margin-right: 20px;
   padding-right: 5px;
 }
 
-#header-menu{
+#header-menu {
   display: block;
   border: 1.5px #000000 solid;
   border-radius: 10px;
@@ -48,30 +47,30 @@ header h2{
   align-items: center;
 }
 
-#header-menu:hover{
+#header-menu:hover {
   cursor: pointer;
 }
 
-#header-menu span{
+#header-menu span {
   font-weight: bold;
 }
 
-.sp-header-link{
+.sp-header-link {
   z-index: 9999;
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100vh;
-   display: block;
-   width: 100%;
-   background: rgba(0, 0, 0, .8);
-   transition: all .5s ease-in-out;
-   opacity: 0;
-   transform: translateX(100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateX(100%);
 }
 
-.sp-header-link ul{
+.sp-header-link ul {
   list-style: none;
   padding: 0;
   display: flex;
@@ -81,49 +80,46 @@ header h2{
   height: 100%;
 }
 
-.sp-header-link li{
+.sp-header-link li {
   margin: 0;
   padding: 0;
 }
 
-.sp-header-link li a, .sp-header-link li span {
+.sp-header-link li a,
+.sp-header-link li span {
   font-size: 30px;
   color: #fff;
   display: block;
   padding: 20px 0;
 }
 
-.close:hover{
+.close:hover {
   cursor: pointer;
 }
 
 .toggle {
-  transform: translateX( 0 );
+  transform: translateX(0);
   opacity: 1;
 }
 
-
-
-#topimg video{
+#topimg video {
   width: 100%;
   padding-top: 83px;
 }
 
-
-
-#abstract{
+#abstract {
   padding-top: 100px;
   margin-top: -100px;
   padding-bottom: 100px;
 }
 
-#abstract h2{
+#abstract h2 {
   font-size: 50px;
   text-align: center;
   padding-bottom: 20px;
 }
 
-#abstract-text{
+#abstract-text {
   text-align: center;
   font-size: large;
   width: 75%;
@@ -137,19 +133,59 @@ header h2{
   transition: opacity 2s, transform 2s;
 }
 
-#abstract-text.appear{
+#abstract-text.appear {
   opacity: 1;
   transform: translateY(0);
 }
 
+#games {
+  padding-top: 100px;
+  margin-top: -100px;
+  padding-bottom: 100px;
+}
 
-#character{
+#games h2 {
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#games-wrap h2 {
+  font-size: 40px;
+  padding-bottom: 5px;
+  text-decoration: underline;
+}
+
+#games-wrap iframe {
+  width: 90%;
+}
+
+#games-wrap {
+  text-align: center;
+  font-size: large;
+  width: 75%;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px white solid;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2s, transform 2s;
+}
+
+#games-wrap.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#character {
   padding-top: 150px;
   margin-top: -150px;
   padding-bottom: 200px;
 }
 
-button{
+button {
   color: #fff;
   background-color: #eb6100;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
@@ -157,40 +193,37 @@ button{
   border-radius: 10px;
 }
 
-button:hover{
+button:hover {
   opacity: 0.7;
   color: #fff;
   background: #f56500;
   cursor: pointer;
 }
 
-#character h2{
+#character h2 {
   font-size: 50px;
   text-align: center;
 }
 
-
-
-#charaimg1 img{
+#charaimg1 img {
   width: auto;
   height: 100vw;
   z-index: 9997;
 }
 
-#charaimg1{
+#charaimg1 {
   opacity: 0;
   transform: translateX(-50px);
   transition: opacity 1s, transform 1s;
 }
 
-#charaimg1.appear{
+#charaimg1.appear {
   opacity: 1;
   transform: translateX(0);
 }
 
-
-#charawrap1{
-  display:flex;
+#charawrap1 {
+  display: flex;
   flex-flow: column;
   align-items: center;
   width: 80%;
@@ -200,8 +233,7 @@ button:hover{
   margin: auto;
 }
 
-
-#charatext1{
+#charatext1 {
   padding: 10px;
   margin: 10px;
   text-align: center;
@@ -213,32 +245,30 @@ button:hover{
   transition: opacity 2s, transform 2s;
 }
 
-#charatext1.appear{
+#charatext1.appear {
   opacity: 1;
   transform: translateX(0);
 }
 
-
-#charaimg2 img{
+#charaimg2 img {
   width: auto;
   height: 100vw;
   z-index: 9997;
 }
 
-#charaimg2{
+#charaimg2 {
   opacity: 0;
   transform: translateX(50px);
   transition: opacity 1s, transform 1s;
 }
 
-#charaimg2.appear{
+#charaimg2.appear {
   opacity: 1;
   transform: translateX(0);
 }
 
-
-#charawrap2{
-  display:flex;
+#charawrap2 {
+  display: flex;
   flex-flow: column;
   align-items: center;
   width: 80%;
@@ -249,7 +279,7 @@ button:hover{
   margin-top: 150px;
 }
 
-#charatext2{
+#charatext2 {
   padding: 10px;
   margin: 10px;
   text-align: center;
@@ -261,32 +291,29 @@ button:hover{
   transition: opacity 2s, transform 2s;
 }
 
-#charatext2.appear{
+#charatext2.appear {
   opacity: 1;
   transform: translateX(0);
 }
 
-
-#movie{
+#movie {
   padding-top: 100px;
   margin-top: -100px;
   padding-bottom: 200px;
 }
 
-#movie h2{
+#movie h2 {
   font-size: 50px;
   text-align: center;
 }
 
-#movie-content{
+#movie-content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -300,64 +327,68 @@ footer{
   z-index: 9998;
 }
 
-footer a{
-  margin:5px 25px;
+footer a {
+  margin: 5px 25px;
   z-index: 9998;
 }
 
-@media (min-width:600px) {
-  #header-link{
+@media (min-width: 600px) {
+  #header-link {
     display: block;
     margin: auto 0 auto auto;
   }
 
-  #header-menu{
+  #header-menu {
     display: none;
   }
-  
-  #topimg video{
+
+  #topimg video {
     padding-top: 83px;
   }
 
-  #chara1{
+  #games-wrap iframe {
+    width: 560px;
+    height: 315px;
+  }
+
+  #chara1 {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  #charaimg1 img{
+
+  #charaimg1 img {
     width: 500px;
-    height: auto;  
+    height: auto;
     position: absolute;
     right: 50%;
     top: -70px;
   }
 
-  #charaimg1{
+  #charaimg1 {
     width: 100px;
-    height: 300px;  
+    height: 300px;
   }
-  
-  #charawrap1{
+
+  #charawrap1 {
     position: relative;
     height: 600px;
   }
-  
-  #charatext1{
+
+  #charatext1 {
     background-color: rgba(255, 255, 255, 0);
     position: absolute;
     top: 20%;
     right: 10%;
   }
-  
 
-  #chara2{
+  #chara2 {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  #charaimg2 img{
+
+  #charaimg2 img {
     width: 500px;
     height: auto;
     position: absolute;
@@ -365,21 +396,20 @@ footer a{
     top: -90px;
   }
 
-  #charaimg2{
+  #charaimg2 {
     width: 100px;
-    height: 300px;  
+    height: 300px;
   }
-  
-  #charawrap2{
+
+  #charawrap2 {
     position: relative;
     height: 600px;
   }
-  
-  #charatext2{
+
+  #charatext2 {
     background-color: rgba(255, 255, 255, 0);
     position: absolute;
     top: 20%;
     left: 10%;
   }
-  
 }
