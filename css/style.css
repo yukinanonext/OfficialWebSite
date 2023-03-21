@@ -156,6 +156,32 @@ header h2 {
   text-decoration: underline;
 }
 
+#games-wrap a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 120px;
+  font-size: 12px;
+  margin: auto;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border: 2px solid #27acd9;
+  background: #27acd9;
+  color: #fff;
+  border-radius: 100vh;
+  transition: 0.5s;
+}
+
+#games-wrap video {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#games-wrap a:hover {
+  color: #27acd9;
+  background: #fff;
+}
+
 #games-wrap iframe {
   width: 90%;
 }
@@ -185,7 +211,7 @@ header h2 {
   padding-bottom: 200px;
 }
 
-button {
+#character button {
   color: #fff;
   background-color: #eb6100;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
@@ -193,7 +219,7 @@ button {
   border-radius: 10px;
 }
 
-button:hover {
+#character button:hover {
   opacity: 0.7;
   color: #fff;
   background: #f56500;
@@ -356,6 +382,16 @@ footer a {
   #games-wrap iframe {
     width: 560px;
     height: 315px;
+  }
+
+  #games-wrap a {
+    width: 180px;
+    font-size: medium;
+    padding: 1rem 4rem;
+  }
+
+  #games-wrap video {
+    width: 500px;
   }
 
   #chara1 {
